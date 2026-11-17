@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Account balance",
+    "description": "Shows the signed-in account's top-up and bonus balance above the sidebar account entry, refreshes every minute, and offers a refresh button.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "title": {
+    "en": "cheny5100 plugins",
+    "zh": "cheny5100 插件"
+  },
+  "metadata": {
+    "categories": {
+      "usage": {
+        "title": {
+          "en": "Usage & billing",
+          "zh": "用量与计费"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-account-balance-pill",
+      "title": {
+        "en": "Account balance",
+        "zh": "账户余额"
+      },
+      "description": {
+        "en": "Shows the signed-in account's top-up and bonus balance above the DSH sidebar account entry, refreshed every minute with a manual refresh button.",
+        "zh": "在 DSH 侧边栏底部账号入口上方显示当前登录账号的充值余额与赠金余额，每分钟自动刷新，并可手动刷新。"
+      },
+      "icon": "icon.svg",
+      "author": "cheny5100",
+      "homepage": "https://github.com/cheny5100/dsh-account-balance-pill#readme",
+      "repository": {
+        "url": "https://github.com/cheny5100/dsh-account-balance-pill"
+      },
+      "metadata": {
+        "category": "usage",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek-harness",
+          "balance",
+          "account",
+          "sidebar"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794877441,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.3 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}

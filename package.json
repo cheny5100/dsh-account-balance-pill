@@ -1,0 +1,56 @@
+{
+  "name": "dsh-account-balance-pill",
+  "version": "0.1.0",
+  "description": "Shows the signed-in DeepSeek account's top-up and bonus balance above the DSH sidebar account entry, refreshed every minute with a manual refresh button.",
+  "type": "module",
+  "license": "MIT",
+  "author": "cheny5100",
+  "homepage": "https://github.com/cheny5100/dsh-account-balance-pill#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheny5100/dsh-account-balance-pill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cheny5100/dsh-account-balance-pill/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "balance",
+    "account",
+    "sidebar"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.3 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
